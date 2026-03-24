@@ -20,7 +20,6 @@
 body{font-family:'Noto Sans KR',sans-serif;background:var(--g50);color:var(--g800);min-height:100vh;}
 a{text-decoration:none;color:inherit;}
 
-/* NAV */
 nav{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.06);}
 .nav-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;padding:0 1rem;}
 .nav-logo{font-family:'Black Han Sans',sans-serif;font-size:15px;color:var(--green);padding:1rem 1rem 1rem 0;margin-right:8px;white-space:nowrap;border-right:1px solid var(--g100);}
@@ -29,11 +28,9 @@ nav{background:#fff;border-bottom:1px solid var(--g200);position:sticky;top:0;z-
 .nav-link:hover{color:var(--g800);}
 .nav-link.active{color:var(--green);border-bottom-color:var(--green);}
 
-/* PAGES */
 .page{display:none;}
 .page.active{display:block;}
 
-/* HEADER */
 header{background:var(--green);color:#fff;position:relative;overflow:hidden;}
 header::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(255,255,255,.025) 40px,rgba(255,255,255,.025) 80px);}
 .hdr{max-width:900px;margin:0 auto;padding:2.5rem 1.5rem 2rem;position:relative;}
@@ -43,12 +40,10 @@ header::before{content:'';position:absolute;inset:0;background:repeating-linear-
 .hdr-sub{font-size:14px;color:rgba(255,255,255,.65);line-height:1.7;max-width:500px;}
 .hdr-divider{height:4px;background:linear-gradient(90deg,#86efac,#34d399,#10b981);}
 
-/* LAYOUT */
 .wrap{max-width:900px;margin:0 auto;padding:1.5rem 1rem 4rem;}
 .card{background:#fff;border:1px solid var(--g200);border-radius:var(--radius);padding:1.5rem;margin-bottom:1rem;box-shadow:var(--sh);}
 .card-title{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--g400);text-transform:uppercase;margin-bottom:1.25rem;}
 
-/* FORM */
 .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px;}
 .lbl{font-size:14px;color:var(--g600);min-width:80px;}
 input[type=number],input[type=password]{height:38px;border:1px solid var(--g200);border-radius:8px;padding:0 10px;font-size:14px;font-family:'Noto Sans KR',sans-serif;color:var(--g800);background:var(--g50);outline:none;transition:border-color .15s;}
@@ -65,7 +60,6 @@ input:focus{border-color:var(--green-mid);background:#fff;}
 .btn-b{color:var(--blue);border-color:var(--blue-border);}
 .btn-b:hover{background:var(--blue-light);}
 
-/* TEACHER PANEL */
 .t-panel{display:none;background:#fffbeb;border:1px solid var(--amber-border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1rem;box-shadow:var(--sh);}
 .t-badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 10px;border-radius:99px;background:var(--amber);color:#fff;margin-left:8px;}
 .legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:10px;}
@@ -75,7 +69,6 @@ input:focus{border-color:var(--green-mid);background:#fff;}
 .tag-f{background:var(--blue-light);color:var(--blue);border:1px solid var(--blue-border);}
 .tag-b{background:var(--amber-light);color:var(--amber);border:1px solid var(--amber-border);}
 
-/* SEAT */
 .draw-sec{display:none;}
 .blackboard{background:#1e3a2b;color:#a7f3c8;text-align:center;padding:11px 16px;border-radius:8px;font-size:13px;font-weight:500;margin-top:10px;cursor:pointer;user-select:none;letter-spacing:.05em;border:2px solid #2d5a3f;transition:opacity .1s;}
 .blackboard:active{opacity:.8;}
@@ -95,7 +88,6 @@ input:focus{border-color:var(--green-mid);background:#fff;}
 .draw-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
 .result-banner{display:none;margin-top:12px;padding:10px 16px;background:var(--green-light);border:1px solid var(--green-border);border-radius:8px;font-size:13px;font-weight:500;color:var(--green);text-align:center;}
 
-/* MODAL */
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:300;align-items:center;justify-content:center;padding:1rem;}
 .modal{background:#fff;border-radius:var(--radius);padding:1.5rem;width:100%;max-width:340px;box-shadow:var(--sh-md);}
 .modal h2{font-size:16px;font-weight:700;margin-bottom:1rem;}
@@ -113,7 +105,6 @@ input:focus{border-color:var(--green-mid);background:#fff;}
 .modal-notice{font-size:12px;color:var(--g400);margin-top:10px;padding-top:10px;border-top:1px solid var(--g100);}
 .modal-footer{margin-top:14px;display:flex;gap:8px;}
 
-/* ABOUT */
 .profile-wrap{display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap;}
 .avatar{width:80px;height:80px;border-radius:50%;background:var(--green-light);border:3px solid var(--green-border);display:flex;align-items:center;justify-content:center;font-size:32px;flex-shrink:0;}
 .profile-info h2{font-size:20px;font-weight:700;margin-bottom:4px;}
@@ -122,7 +113,6 @@ input:focus{border-color:var(--green-mid);background:#fff;}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:1rem;}
 .contact-item{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--g200);border-radius:10px;font-size:13px;color:var(--g700);background:var(--g50);}
 
-/* TOOLS */
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;}
 .tool-card{display:flex;flex-direction:column;border:1px solid var(--g200);border-radius:var(--radius);padding:1.25rem 1rem;background:#fff;box-shadow:var(--sh);transition:all .18s;cursor:pointer;text-align:left;font-family:'Noto Sans KR',sans-serif;font-size:inherit;color:inherit;outline:none;appearance:none;-webkit-appearance:none;}
 .tool-card:hover{transform:translateY(-2px);box-shadow:var(--sh-md);border-color:var(--green-border);}
@@ -260,7 +250,6 @@ footer strong{color:var(--green);}
         <div class="tool-desc">학급 자리를 랜덤으로 배치해주는 프로그램입니다.</div>
         <span class="tbadge">✏️ 직접 개발</span>
       </button>
-      <!-- ↓ 여기에 도구 카드 추가/수정 -->
       <a class="tool-card" href="https://kahoot.com" target="_blank">
         <div class="tool-icon">🎮</div>
         <div class="tool-name">Kahoot!</div>
@@ -377,7 +366,6 @@ footer strong{color:var(--green);}
 </div>
 
 <script>
-// 모든 함수를 즉시 window에 등록
 (function() {
 
 var S = {
@@ -452,6 +440,7 @@ function updateGrid() {
     el.className = 'seat';
     val.innerHTML = '';
     if (S.teacherMode) {
+      // 교사 모드: 고정/확률조작 색상 구분 표시
       el.classList.add('clickable');
       if (S.fixedMap[i] !== undefined) {
         el.classList.add('fv');
@@ -464,6 +453,7 @@ function updateGrid() {
         val.innerHTML = '<span class="seat-val">' + S.assigned[i] + '</span>';
       }
     } else {
+      // 학생 모드: assigned에 있는 것만, 고정/확률조작 구분 없이 동일하게 표시
       if (S.assigned[i] !== undefined) {
         el.classList.add('assigned');
         val.innerHTML = '<span class="seat-val">' + S.assigned[i] + '</span>';
@@ -573,6 +563,8 @@ function buildAssignment() {
   var free = [];
   for (var i = 0; i < total; i++) if (S.fixedMap[i] === undefined) free.push(i);
   var result = {}, used = {};
+
+  // 확률 조작 자리 먼저 처리
   var bSeats = free.filter(function(i){ return S.biasMap[i] !== undefined; });
   var nSeats = free.filter(function(i){ return S.biasMap[i] === undefined; });
   bSeats.forEach(function(seat) {
@@ -585,6 +577,8 @@ function buildAssignment() {
   var unused = rem.filter(function(n){ return !used[n]; });
   shuffle(unused); shuffle(unassigned);
   for (var j = 0; j < unassigned.length && j < unused.length; j++) result[unassigned[j]] = unused[j];
+
+  // 고정 자리도 결과에 포함
   Object.keys(S.fixedMap).forEach(function(i){ result[+i] = S.fixedMap[i]; });
   return result;
 }
@@ -595,20 +589,23 @@ window.drawAll = function() {
 };
 
 window.drawNext = function() {
+  // 첫 호출 시 전체 배정 미리 계산
+  // 고정석 포함 모든 자리를 _pre에 넣고 순서를 랜덤 섞음
   if (S.seatIdx === 0) {
     var res = buildAssignment();
     S._pre = {};
     Object.keys(res).forEach(function(i) {
-      if (S.fixedMap[+i] !== undefined) S.assigned[+i] = res[i];
-      else S._pre[+i] = res[i];
+      S._pre[+i] = res[i]; // 고정석/확률조작/일반 구분 없이 전부 포함
     });
     S._order = Object.keys(S._pre).map(Number);
-    shuffle(S._order);
+    shuffle(S._order); // 완전 랜덤 순서
   }
   if (S.seatIdx >= S._order.length) { showDone(); return; }
-  var seat = S._order[S.seatIdx], num = S._pre[seat];
+  var seat = S._order[S.seatIdx];
+  var num = S._pre[seat];
   animateSeat(seat, num, function() {
-    S.assigned[seat] = num; S.seatIdx++;
+    S.assigned[seat] = num;
+    S.seatIdx++;
     updateGrid();
     if (S.seatIdx >= S._order.length) showDone();
   });
@@ -649,10 +646,9 @@ function shuffle(a) {
   }
 }
 
-// 초기 실행
 setupClass();
 
-})(); // IIFE 끝
+})();
 </script>
 </body>
 </html>
